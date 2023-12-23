@@ -88,13 +88,64 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
+                <div className='timeline_container_small'>
+                    <div className='row'>
+                        <div className='col-12 col-md-6'>
+                            <div
+                                className="timeline_node_desc_small"
+                            >
+                                <h6 className="timeline_head">Design</h6>
+                                <p className="timeline_desc">
+                                    Bring your conceptual ideas to us and our skilled team of
+                                    designers is ready to meet your needs and turn your concepts
+                                    into reality!
+                                </p>
+                            </div>
+                        </div>
+                        <div className='col-12 col-md-6'>
+                            <div
+                                className="timeline_node_desc_small"
+                            >
+                                <h6 className="timeline_head">Prototyping</h6>
+                                <p className="timeline_desc">
+                                    With the help of state of the art 3D technologies we will create
+                                    a real life 3D prototype of your idea maintaining the industry
+                                    standards.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='col-12 col-md-6'>
+                            <div
+                                className="timeline_node_desc_small"
+                            >
+                                <h6 className="timeline_head">Production</h6>
+                                <p className="timeline_desc">
+                                    With enormous fleet of advanced 3D printers, Triverse Creations
+                                    can fulfill your bulk orders maintaining high quality standards.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='col-12 col-md-6'>
+                            <div
+                                className="timeline_node_desc_small"
+                            >
+                                <h6 className="timeline_head">Delivery</h6>
+                                <p className="timeline_desc">
+                                    Ensuring a swift response has always been a top priority at
+                                    Trivers Creations. What sets us apart is our ability to deliver
+                                    quality 3D Printed Products with perfect finishing touch.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="dark_container">
                 <h2 className="section_head text-center ms-0">Our Services</h2>
                 <div className="container my-5">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-12 col-lg-3 col-md-6 mb-4 mb-lg-0">
                             <div className='tc_card'>
                                 <div className='card_icon_div'>
                                     <i className="bi bi-bricks"></i>
@@ -105,7 +156,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-3">
+                        <div className="col-12 col-lg-3 col-md-6 mb-4 mb-lg-0">
                             <div className='tc_card'>
                                 <div className='card_icon_div'>
                                     <i className="bi bi-boxes"></i>
@@ -116,7 +167,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-3">
+                        <div className="col-12 col-lg-3 col-md-6 mb-4 mb-lg-0">
                             <div className='tc_card'>
                                 <div className='card_icon_div'>
                                     <i className="bi bi-gift"></i>
@@ -127,7 +178,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-3">
+                        <div className="col-12 col-lg-3 col-md-6 mb-4 mb-lg-0">
                             <div className='tc_card'>
                                 <div className='card_icon_div'>
                                     <i className="bi bi-box-seam"></i>
@@ -204,7 +255,7 @@ const HomePage = () => {
             <div className='dark_container'>
                 <h2 className='section_head text-center ms-0'>Contact Us</h2>
                 <div className='container row mt-5 mx-auto'>
-                    <div className='col-6 contact_outer_container p-0'>
+                    <div className='col-lg-6 col-12 contact_outer_container p-0'>
                         <div className='contact_map'>
                             <iframe title='location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.40227785144228!2d72.87205800718276!3d19.263377434657496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1b0ee5742a1%3A0x3dd2d9556ef2a85c!2sBharkadevi%20icecream%20cold%20room!5e0!3m2!1sen!2sin!4v1701193047617!5m2!1sen!2sin" style={{ border: 0, width: "100%", height: "400px" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
@@ -223,7 +274,7 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-6'>
+                    <div className='col-lg-6 col-12 mt-4 mt-lg-0'>
                         <div className='form_container'>
                             <h4 className='form_head'>Let's Get In Touch</h4>
                             <FormComponent />

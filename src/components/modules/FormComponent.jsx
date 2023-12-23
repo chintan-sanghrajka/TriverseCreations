@@ -1,5 +1,7 @@
 import React, { useReducer, useState } from 'react'
 import FormInput from './FormInput'
+import axios from 'axios'
+import { BASE_URL } from '../helper/helper'
 
 const FormComponent = () => {
     const [data, setData] = useState({})
@@ -80,7 +82,19 @@ const FormComponent = () => {
             else if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(data.email)) {
                 dispatch({ type: "invalidEmail", payload: true })
             }
+            else {
+                sendMail()
+            }
         }
+    }
+
+    const sendMail = () => {
+        axios.post(`${BASE_URL}contact-us-mail`, {
+            name: data.name,
+            contact: data.contact,
+            email: data.email,
+            message: data.message
+        })
     }
 
     return (

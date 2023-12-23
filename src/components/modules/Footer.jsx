@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className='footer_container container-fluid'>
             <div className='row'>
-                <div className='col-6 footer_main'>
+                <div className='col-lg-5 col-12 footer_main  py-5 py-lg-0'>
                     <div>
                         <div className='footer_logo_div'>
                             <img src={logo} alt='triverse_creations_logo' style={{ width: "80px", height: "80px" }} />
@@ -30,7 +30,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-6 footer_info_container'>
+                <div className='col-lg-7 col-12 footer_info_container'>
                     <div className='footer_info_div'>
                         <h4 className='footer_head'>Useful Links</h4>
                         <div className='d-flex align-items-center mb-2'>

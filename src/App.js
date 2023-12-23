@@ -4,11 +4,13 @@ import HomePage from "./components/pages/HomePage";
 import ContactUsPage from "./components/pages/ContactUsPage";
 import AboutUsPage from "./components/pages/AboutUsPage";
 import ServicesPage from "./components/pages/ServicesPage";
+import NavBarComponent from "./components/modules/NavBarComponent";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <NavBarComponent />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
