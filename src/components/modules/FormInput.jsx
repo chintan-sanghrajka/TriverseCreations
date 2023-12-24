@@ -1,7 +1,6 @@
 import React from 'react'
 
 const FormInput = ({ props }) => {
-    console.log(props)
     return (
         <div>
             <input type={props.type} name={props.name} placeholder={props.placeholder}

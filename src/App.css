@@ -7,7 +7,6 @@ body{
 .image_container{
   width: 100%;
   height: 100vh;
-  background-image: url("./media/home_background_image_5.avif");
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -15,6 +14,22 @@ body{
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
+}
+
+.image_container_home{
+  background-image: url("./media/home_background_image_5.avif");
+}
+
+.image_container_services{
+  background-image: url("./media/home_background_image_1.avif");
+}
+
+.image_container_about{
+  background-image: url("./media/home_background_image_4.avif");
+}
+
+.image_container_contact{
+  background-image: url("./media/home_background_image.jpg");
 }
 
 .main_heading{
@@ -471,6 +486,12 @@ body{
   align-items: center;
   background-color: #2487ce;
   border-radius: 5px;
+  transition: all 500ms;
+  cursor: pointer;
+}
+
+.icon_div:hover{
+  background-color: #012970;
 }
 
 .footer_icon{
@@ -494,6 +515,7 @@ body{
   font-size: 24px;
   margin-bottom: 0;
   transition: all 500ms;
+  cursor: pointer;
 }
 
 .footer_element:hover{
@@ -582,6 +604,11 @@ body{
 .navbar_logo{
   color: #ffffff;
   font-size: 28px;
+}
+
+.navbar_logo a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .navbar_list{

@@ -1,32 +1,17 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom"
 import Accordion from 'react-bootstrap/Accordion';
-import FormComponent from './../modules/FormComponent';
 import Footer from './../modules/Footer';
 import Portfolio from '../modules/Portfolio';
 import AboutUsComponent from '../modules/AboutUsComponent';
+import IntroComponent from '../modules/IntroComponent';
+import Services from '../modules/Services';
+import Contact from '../modules/Contact';
 
 const HomePage = () => {
-    const navigate = useNavigate()
 
     return (
         <>
-            <div className="image_container">
-                <div>
-                    <h1 className="main_heading mb-4">Triverse Creations</h1>
-                    <p className="main_para mb-5">
-                        Welcome to the World of 3D Printing
-                    </p>
-                    <button
-                        className="contact_us_button"
-                        onClick={() => {
-                            navigate(`/contact`)
-                        }}
-                    >
-                        Get Started
-                    </button>
-                </div>
-            </div>
+            <IntroComponent head={"Triverse Creations"} para={"Welcome to the World of 3D Printing"} imageClass={"image_container_home"} />
 
             <div className="process_div">
                 <h2 className="section_head section_head_mobile">
@@ -142,55 +127,7 @@ const HomePage = () => {
             </div>
 
             <div className="dark_container">
-                <h2 className="section_head text-center ms-0">Our Services</h2>
-                <div className="container mt-5">
-                    <div className="row">
-                        <div className="col-12 col-xl-3 col-lg-6 mb-4 mb-xl-0">
-                            <div className='tc_card'>
-                                <div className='card_icon_div'>
-                                    <i className="bi bi-bricks"></i>
-                                </div>
-                                <h6 className='card_head'>3D Printing</h6>
-                                <p className='card_desc'>
-                                    Revolutionizing the Domain of Additive Manufacturing, this cutting-edge technology offers complete creative freedom, eliminating the need for die molding and intricate processes. It seamlessly transforms conceptual ideas into reality, providing a 360° scope for development.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-12 col-xl-3 col-lg-6 mb-4 mb-xl-0">
-                            <div className='tc_card'>
-                                <div className='card_icon_div'>
-                                    <i className="bi bi-boxes"></i>
-                                </div>
-                                <h6 className='card_head'>3D Modeling</h6>
-                                <p className='card_desc'>
-                                    From idea to software, from basic to extremely detailed, our designing team provides zero margin for errors. We use the best software’s available targeting major technical industries.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-12 col-xl-3 col-lg-6 mb-4 mb-xl-0">
-                            <div className='tc_card'>
-                                <div className='card_icon_div'>
-                                    <i className="bi bi-gift"></i>
-                                </div>
-                                <h6 className='card_head'>Gifting Solutions</h6>
-                                <p className='card_desc'>
-                                    Discover unique products and unheard-of ideas with TRIVERSE CREATIONS, your go-to for gifts tailored for both businesses and individuals. Our efficient production capacity allows us to offer quick gifting options year-round, perfect for any occasion and corporate needs!
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-12 col-xl-3 col-lg-6 mb-4 mb-xl-0">
-                            <div className='tc_card'>
-                                <div className='card_icon_div'>
-                                    <i className="bi bi-box-seam"></i>
-                                </div>
-                                <h6 className='card_head'>Batch Manufacturing</h6>
-                                <p className='card_desc'>
-                                    A 3D printing facility serving 25+ printers and several technologies we lead in serving Small to Medium batch manufacturing of parts/products.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Services />
             </div>
 
             <div className='image_section image_section_1'>
@@ -253,34 +190,7 @@ const HomePage = () => {
             </div>
 
             <div className='dark_container contact_container'>
-                <h2 className='section_head text-center ms-0'>Contact Us</h2>
-                <div className='container row mt-5 mx-auto'>
-                    <div className='col-lg-6 col-12 contact_outer_container p-0'>
-                        <div className='contact_map'>
-                            <iframe title='location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.40227785144228!2d72.87205800718276!3d19.263377434657496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1b0ee5742a1%3A0x3dd2d9556ef2a85c!2sBharkadevi%20icecream%20cold%20room!5e0!3m2!1sen!2sin!4v1701193047617!5m2!1sen!2sin" style={{ border: 0, width: "100%", height: "400px" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div className='contact_details_div w-100 p-4'>
-                            <div className='d-flex'>
-                                <i className="bi bi-geo-alt contact_icon"></i>
-                                <p className='contact_para'>Ajit Palace, Dahisar - Mira Rd, near hotel, nearby Street hotel, Pandurang Wadi, Penkarpada, Mira Road East, Mira Bhayandar, Maharashtra 401101</p>
-                            </div>
-                            <div className='d-flex align-items-center my-2'>
-                                <i className="bi bi-telephone contact_icon"></i>
-                                <p className='contact_para'>9653278209</p>
-                            </div>
-                            <div className='d-flex align-items-center'>
-                                <i className="bi bi-envelope contact_icon"></i>
-                                <p className='contact_para'>triversecreations1111@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-lg-6 col-12 mt-4 mt-lg-0'>
-                        <div className='form_container'>
-                            <h4 className='form_head'>Let's Get In Touch</h4>
-                            <FormComponent />
-                        </div>
-                    </div>
-                </div>
+                <Contact />
             </div>
 
             <Footer />

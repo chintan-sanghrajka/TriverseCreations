@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import logo from './../../logos/Triverse_Creations_Logo.webp'
 
 const Footer = () => {
-    console.log(logo)
     const navigate = useNavigate()
     return (
         <div className='footer_container container-fluid'>

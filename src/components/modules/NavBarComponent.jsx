@@ -18,7 +18,7 @@ const Navbar = () => {
         <>
             <div className='navbar_outer_div'>
                 <div className='navbar_side_div'>
-                    <h4 className='navbar_logo'><img className='navbar_logo_image' src={logo} alt='logo' />Triverse Creations</h4>
+                    <h4 className='navbar_logo'><Link to="/home"><img className='navbar_logo_image' src={logo} alt='logo' />Triverse Creations</Link></h4>
                 </div>
                 <div className={nav ? 'navbar_center_div navbar_transform' : 'navbar_center_div'}>
                     {
@@ -32,8 +32,8 @@ const Navbar = () => {
                     }
                     <ul className='navbar_list'>
                         <li className='navbar_elements'><NavLink to="/services">Services</NavLink></li>
-                        <li className='navbar_elements'><Link to="/about-us">About Us</Link></li>
-                        <li className='navbar_elements'><Link to="/contact">Contact Us</Link></li>
+                        <li className='navbar_elements'><NavLink to="/about-us">About Us</NavLink></li>
+                        <li className='navbar_elements'><NavLink to="/contact">Contact Us</NavLink></li>
                     </ul>
                 </div>
                 <div className='navbar_side_div navbar_hamburger_div' onClick={hamburgerHandler}>
