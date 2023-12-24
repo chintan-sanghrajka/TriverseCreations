@@ -31,9 +31,9 @@ const Navbar = () => {
                         </div>
                     }
                     <ul className='navbar_list'>
-                        <li className='navbar_elements'><NavLink to="/services">Services</NavLink></li>
-                        <li className='navbar_elements'><NavLink to="/about-us">About Us</NavLink></li>
-                        <li className='navbar_elements'><NavLink to="/contact">Contact Us</NavLink></li>
+                        <li className='navbar_elements' onClick={navClickHandler}><NavLink to="/services">Services</NavLink></li>
+                        <li className='navbar_elements' onClick={navClickHandler}><NavLink to="/about-us">About Us</NavLink></li>
+                        <li className='navbar_elements' onClick={navClickHandler}><NavLink to="/contact">Contact Us</NavLink></li>
                     </ul>
                 </div>
                 <div className='navbar_side_div navbar_hamburger_div' onClick={hamburgerHandler}>

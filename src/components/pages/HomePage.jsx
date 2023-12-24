@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 import Footer from './../modules/Footer';
 import Portfolio from '../modules/Portfolio';
@@ -8,6 +8,10 @@ import Services from '../modules/Services';
 import Contact from '../modules/Contact';
 
 const HomePage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
@@ -189,7 +193,7 @@ const HomePage = () => {
                 <AboutUsComponent />
             </div>
 
-            <div className='dark_container contact_container'>
+            <div className='dark_container contact_container contact_mobile'>
                 <Contact />
             </div>
 
