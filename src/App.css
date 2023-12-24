@@ -867,7 +867,9 @@ body{
     font-size: 2rem;
   }
   .main_para{
-    font-size: 2.4rem;
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
   }
   .contact_us_button{
     padding: 14px 36px;
@@ -884,7 +886,7 @@ body{
   }
   .tc_card{
     width: 100%;
-    height: 400px;
+    height: 420px;
   }
   .image_section{
     height: 200px;
@@ -903,6 +905,7 @@ body{
     font-size: 20px;
     margin: 0;
     margin-bottom: 20px;
+    text-align: justify;
   }
   .count{
     font-size: 40px;
@@ -927,5 +930,8 @@ body{
   }
   .footer_element{
     font-size: 20px;
+  }
+  .image_container{
+    height: 80vh;
   }
 }

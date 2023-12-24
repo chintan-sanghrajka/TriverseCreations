@@ -7,6 +7,7 @@ const AboutUsPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
     return (
         <>
             <IntroComponent head={"Triverse Creations"} para={"Welcome to the World of 3D Printing"} imageClass={"image_container_about"} />
