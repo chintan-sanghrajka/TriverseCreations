@@ -29,7 +29,7 @@ const HomePage = () => {
             </div>
 
             <div className="process_div">
-                <h2 className="section_head">
+                <h2 className="section_head section_head_mobile">
                     Design to delivery all at one place...
                 </h2>
                 <div className="timeline_container">
@@ -88,7 +88,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='timeline_container_small'>
+                <div className='timeline_container_small mt-5'>
                     <div className='row'>
                         <div className='col-12 col-md-6'>
                             <div
@@ -143,9 +143,9 @@ const HomePage = () => {
 
             <div className="dark_container">
                 <h2 className="section_head text-center ms-0">Our Services</h2>
-                <div className="container my-5">
+                <div className="container mt-5">
                     <div className="row">
-                        <div className="col-12 col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div className="col-12 col-xl-3 col-lg-6 mb-4 mb-xl-0">
                             <div className='tc_card'>
                                 <div className='card_icon_div'>
                                     <i className="bi bi-bricks"></i>
@@ -156,7 +156,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div className="col-12 col-xl-3 col-lg-6 mb-4 mb-xl-0">
                             <div className='tc_card'>
                                 <div className='card_icon_div'>
                                     <i className="bi bi-boxes"></i>
@@ -167,7 +167,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div className="col-12 col-xl-3 col-lg-6 mb-4 mb-xl-0">
                             <div className='tc_card'>
                                 <div className='card_icon_div'>
                                     <i className="bi bi-gift"></i>
@@ -178,7 +178,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div className="col-12 col-xl-3 col-lg-6 mb-4 mb-xl-0">
                             <div className='tc_card'>
                                 <div className='card_icon_div'>
                                     <i className="bi bi-box-seam"></i>
@@ -195,7 +195,7 @@ const HomePage = () => {
 
             <div className='image_section image_section_1'>
                 <div className='image_section_shadow'></div>
-                <p className='image_section_quote w-50'>The real power of 3D printing is not in the technology itself but in the ability to make unique and customized objects.
+                <p className='image_section_quote w-75 text-center'>The real power of 3D printing is not in the technology itself but in the ability to make unique and customized objects.
                 </p>
             </div>
 
@@ -244,7 +244,7 @@ const HomePage = () => {
 
             <div className='image_section image_section_2'>
                 <div className='image_section_shadow'></div>
-                <p className='image_section_quote'>Explore the new reality with futuristic technology</p>
+                <p className='image_section_quote w-75 text-center'>Explore the new reality with futuristic technology</p>
             </div>
 
             <div className='light_container'>
@@ -252,7 +252,7 @@ const HomePage = () => {
                 <AboutUsComponent />
             </div>
 
-            <div className='dark_container'>
+            <div className='dark_container contact_container'>
                 <h2 className='section_head text-center ms-0'>Contact Us</h2>
                 <div className='container row mt-5 mx-auto'>
                     <div className='col-lg-6 col-12 contact_outer_container p-0'>

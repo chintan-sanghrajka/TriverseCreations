@@ -573,7 +573,7 @@ body{
 .navbar_center_div{
   width: 60%; 
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   transition: all 1s;
   transform: translateX(0);
@@ -635,6 +635,34 @@ body{
   .process_div{
     overflow-x: scroll;
   }
+  .navbar_logo{
+    font-size: 22px;
+  }
+  .navbar_list li a{
+    font-size: 20px;
+  }
+  .main_heading{
+    font-size: 38px;
+  }
+  .main_para{
+    font-size: 3rem;
+  }
+  .tc_card{
+    height: 360px;
+  }
+  .dark_container{
+    padding: 80px 40px 50px 40px;
+  }
+  .image_section{
+    height: 250px;
+  }
+  .image_section_quote{
+    font-size: 26px;
+  }
+  .form_container{
+    padding: 0;
+    padding-left: 40px;
+  }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px){
@@ -666,6 +694,12 @@ body{
   .navbar_list{
     display: block;
     padding: 0;
+    margin-top: 40px;
+  }
+  .navbar_list li a{
+    border-bottom: solid 1px #fff;
+    display: block;
+    padding-bottom: 16px;
   }
   .navbar_list li{
     margin: 20px 0;
@@ -688,13 +722,55 @@ body{
     border-radius: 8px;
     padding: 30px 20px;
     box-shadow: 0 0 18px rgba(1, 29, 77, 0.08);
-    height: 260px;
+    height: 280px;
     margin-bottom: 24px;
   }
   .process_div{
     background-color: #fff;
-    padding: 40px 0;
+    padding: 60px 40px;
     height: fit-content;
+  }
+  .main_heading{
+    font-size: 2.4rem;
+  }
+  .main_para{
+    font-size: 3rem;
+  }
+  .contact_us_button{
+    padding: 14px 36px;
+    font-size: 1rem;
+  }
+  .section_head{
+    font-size: 32px;
+    text-align: center;
+    color: #012970;
+  }
+  .dark_container{
+    background-color: #f8fbfe;
+    padding: 60px 40px;
+  }
+  .tc_card{
+    width: 60%;
+    height: 400px;
+  }
+  .image_section{
+    height: 200px;
+  }
+  .image_section_quote{
+    font-size: 22px;
+  }
+  .portfolio_image_div{
+    width: 60%;
+  }
+  .light_container{
+    background-color: #fff;
+    padding: 60px 40px;
+  }
+  .about_para{
+    font-size: 20px;
+  }
+  .count{
+    font-size: 40px;
   }
 }
 
@@ -724,12 +800,18 @@ body{
   .navbar_list{
     display: block;
     padding: 0;
+    margin-top: 40px;
   }
   .navbar_list li{
     margin: 20px 0;
   }
   .navbar_transform{
     transform: translateX(0);
+  }
+  .navbar_list li a{
+    border-bottom: solid 1px #fff;
+    display: block;
+    padding-bottom: 16px;
   }
   .form_container{
     padding: 0;
@@ -753,5 +835,58 @@ body{
     background-color: #fff;
     padding: 40px 0;
     height: fit-content;
+  }
+  .main_heading{
+    font-size: 2rem;
+  }
+  .main_para{
+    font-size: 2.4rem;
+  }
+  .contact_us_button{
+    padding: 14px 36px;
+    font-size: 1rem;
+  }
+  .section_head{
+    font-size: 32px;
+    text-align: center;
+    color: #012970;
+  }
+  .dark_container{
+    background-color: #f8fbfe;
+    padding: 30px 40px 60px 40px;
+  }
+  .tc_card{
+    width: 100%;
+    height: 400px;
+  }
+  .image_section{
+    height: 200px;
+  }
+  .image_section_quote{
+    font-size: 18px;
+  }
+  .portfolio_image_div{
+    width: 100%;
+  }
+  .light_container{
+    background-color: #fff;
+    padding: 30px 40px 60px 40px;
+  }
+  .about_para{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .count{
+    font-size: 40px;
+  }
+  .form_container{
+    padding: 0;
+  }
+  .footer_info_div{
+    width: 50%;
+  }
+  .section_head_mobile{
+    margin: 0 5%;
   }
 }

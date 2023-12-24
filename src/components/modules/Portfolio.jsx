@@ -10,7 +10,7 @@ const Portfolio = () => {
     return (
         <div className='container mt-5'>
             <div className='row'>
-                <div className='col-12 col-lg-4 col-md-6 p-0 mb-4'>
+                <div className='col-12 col-xl-4 col-lg-6 p-0 mb-4'>
                     <div className='portfolio_image_div'>
                         <div className='portfolio_image_shadow_div'>
                             <p className='portfolio_name'>Ganesha</p>
@@ -18,7 +18,7 @@ const Portfolio = () => {
                         <img src={portfolio1} alt="" className='w-100 h-100' />
                     </div>
                 </div>
-                <div className='col-12 col-lg-4 col-md-6 p-0 mb-4'>
+                <div className='col-12 col-xl-4 col-lg-6 p-0 mb-4'>
                     <div className='portfolio_image_div'>
                         <div className='portfolio_image_shadow_div'>
                             <p className='portfolio_name'>Trophies</p>
@@ -26,7 +26,7 @@ const Portfolio = () => {
                         <img src={portfolio2} alt="" className='w-100 h-100' />
                     </div>
                 </div>
-                <div className='col-12 col-lg-4 col-md-6 p-0 mb-4'>
+                <div className='col-12 col-xl-4 col-lg-6 p-0 mb-4'>
                     <div className='portfolio_image_div'>
                         <div className='portfolio_image_shadow_div'>
                             <p className='portfolio_name'>Pen Stand</p>
@@ -34,7 +34,7 @@ const Portfolio = () => {
                         <img src={portfolio3} alt="" className='w-100 h-100' />
                     </div>
                 </div>
-                <div className='col-12 col-lg-4 col-md-6 p-0 mb-4'>
+                <div className='col-12 col-xl-4 col-lg-6 p-0 mb-4'>
                     <div className='portfolio_image_div'>
                         <div className='portfolio_image_shadow_div'>
                             <p className='portfolio_name'>Pen Stand</p>
@@ -42,7 +42,7 @@ const Portfolio = () => {
                         <img src={portfolio4} alt="" className='w-100 h-100' />
                     </div>
                 </div>
-                <div className='col-12 col-lg-4 col-md-6 p-0 mb-4'>
+                <div className='col-12 col-xl-4 col-lg-6 p-0 mb-4'>
                     <div className='portfolio_image_div'>
                         <div className='portfolio_image_shadow_div'>
                             <p className='portfolio_name'>Pen Stand</p>
@@ -50,7 +50,7 @@ const Portfolio = () => {
                         <img src={portfolio5} alt="" className='w-100 h-100' />
                     </div>
                 </div>
-                <div className='col-12 col-lg-4 col-md-6 p-0 mb-4'>
+                <div className='col-12 col-xl-4 col-lg-6 p-0 mb-4'>
                     <div className='portfolio_image_div'>
                         <div className='portfolio_image_shadow_div'>
                             <p className='portfolio_name'>Pen & Mobile Stand</p>

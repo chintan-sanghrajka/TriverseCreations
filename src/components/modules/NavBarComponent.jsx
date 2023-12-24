@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Link, useNavigate, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from './../../logos/Triverse_Creations_Logo_transperent.png'
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false)
-    const navigate = useNavigate()
     const [nav, setNav] = useState(false)
 
     const hamburgerHandler = () => {
@@ -24,7 +23,7 @@ const Navbar = () => {
                 <div className={nav ? 'navbar_center_div navbar_transform' : 'navbar_center_div'}>
                     {
                         nav &&
-                        <div className='d-flex justify-content-between'>
+                        <div className='d-flex justify-content-between navbar_side_head'>
                             <img className='navbar_logo_image' src={logo} alt='logo' />
                             <div className='navbar_hamburger' onClick={navClickHandler}>
                                 <i className="bi bi-x-lg"></i>
@@ -32,9 +31,9 @@ const Navbar = () => {
                         </div>
                     }
                     <ul className='navbar_list'>
-                        <li><NavLink to="/services">Services</NavLink></li>
-                        <li><Link to="/about-us">About Us</Link></li>
-                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li className='navbar_elements'><NavLink to="/services">Services</NavLink></li>
+                        <li className='navbar_elements'><Link to="/about-us">About Us</Link></li>
+                        <li className='navbar_elements'><Link to="/contact">Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className='navbar_side_div navbar_hamburger_div' onClick={hamburgerHandler}>
